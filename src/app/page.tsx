@@ -5,7 +5,8 @@ import Hero from "@/components/hero";
 import Collection from "@/components/collection";
 import ListProducts from "@/components/list-products";
 import Navbar from "@/components/navbar";
-import { chimneyProducts, lightProducts, furnitureProducts } from "@/lib/products";
+import { chimneyProducts, lightProducts, furnitureProducts, latestStories } from "@/lib/products";
+import Journal from "@/components/journal";
 
 
 export default function Home() {
@@ -22,7 +23,6 @@ export default function Home() {
       <ListProducts col={4} products={chimneyProducts} title={'Our latest chimneypieces'}/>
       <ListProducts col={5} products={lightProducts} title={'Our latest lighting'}/>
       </div>
-      <div className="px-10">
       <CategoryCommon
     title="Furniture"
     description="Lorem ipsum dolor sit amet, incididunt ut labore et dolore consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim labore et dolore magna ad minim veniam."
@@ -36,7 +36,6 @@ export default function Home() {
       height: 734,
     }}
   />
-      </div>
 
       <div className="mt-32">
       <ListProducts col={5} products={furnitureProducts} title={'Our latest furniture'}/>
@@ -45,6 +44,14 @@ export default function Home() {
       <div className="py-36 bg-accent">
         <Collection/>
       </div>
+
+      
+      <ListProducts col={5} products={latestStories} title={'See more of our latest stories'}/>
+
+      <div className="py-52">
+        <Journal/>
+      </div>
+
     </>
   );
 }

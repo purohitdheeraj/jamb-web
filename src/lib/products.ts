@@ -91,3 +91,36 @@ export const furnitureProducts: any = [
     subtitle: "Robust and stylish",
   },
 ];
+
+export const latestStories: any = [
+  {
+    imageSrc: "/assets/aristotle.png",
+    imageAlt: "Chair",
+    title: "Elegant Chair",
+    subtitle: "Comfort and style combined",
+  },
+  {
+    imageSrc: "/assets/aristotle.png",
+    imageAlt: "Wooden Table",
+    title: "Modern Wooden Table",
+    subtitle: "Functional and sleek",
+  },
+  {
+    imageSrc: "/assets/aristotle.png",
+    imageAlt: "Table",
+    title: "Vintage Table",
+    subtitle: "Classic and timeless",
+  },
+  {
+    imageSrc: "/assets/aristotle.png",
+    imageAlt: "Mirror",
+    title: "Rustic Mirror",
+    subtitle: "Charming and cozy",
+  },
+  {
+    imageSrc: "/assets/aristotle.png",
+    imageAlt: "Sofa",
+    title: "Industrial Sofa",
+    subtitle: "Robust and stylish",
+  },
+];
