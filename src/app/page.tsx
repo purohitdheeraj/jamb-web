@@ -7,6 +7,7 @@ import ListProducts from "@/components/list-products";
 import Navbar from "@/components/navbar";
 import { chimneyProducts, lightProducts, furnitureProducts, latestStories } from "@/lib/products";
 import Journal from "@/components/journal";
+import Footer from "@/components/footer";
 
 
 export default function Home() {
@@ -51,7 +52,7 @@ export default function Home() {
       <div className="xl:py-52">
         <Journal/>
       </div>
-
+      <Footer/>
     </>
   );
 }
