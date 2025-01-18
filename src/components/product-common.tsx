@@ -31,7 +31,7 @@ const ProductCommon: React.FC<ProductCommonProps> = ({ imageSrc, imageAlt, title
       <h2 className='text-secondary-foreground copernicus-semibold mt-auto'>
         {title}
       </h2>
-      <p className='text-sm'>{subtitle}</p>
+      <p className='text-sm line-clamp-1'>{subtitle}</p>
     </div>
   );
 };
