@@ -9,7 +9,6 @@ const Hero = () => {
       <Image
   src="/assets/home-banner.png"
   alt="fireplaces"
-  layout="responsive"
   width={1436}
   height={768}
   loading="lazy"

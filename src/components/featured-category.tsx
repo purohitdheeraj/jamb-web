@@ -1,11 +1,11 @@
 'use client';
-import Featured from "./featured";
+import CategoryCommon from "./category-common";
 
 
-const FeatureProducts = () => {
+const FeaturedCategory = () => {
   return (
     <>
-    <Featured
+    <CategoryCommon
     title="Fireplaces"
     description="Lorem ipsum dolor sit amet, incididunt ut labore et dolore consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim labore et dolore magna ad minim veniam."
     buttons={[
@@ -21,7 +21,7 @@ const FeatureProducts = () => {
   />
 
 
-<Featured
+<CategoryCommon
     title="Lighting"
     description="Lorem ipsum dolor sit amet, incididunt ut labore et dolore consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim labore et dolore magna ad minim veniam."
     buttons={[
@@ -39,4 +39,4 @@ const FeatureProducts = () => {
   )
 }
 
-export default FeatureProducts
+export default FeaturedCategory;

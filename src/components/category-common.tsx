@@ -9,7 +9,7 @@ interface ButtonProps {
   onClick?: () => void;
 }
 
-interface FeaturedProps {
+interface CategoryCommon {
   title: string;
   description: string;
   buttons: ButtonProps[];
@@ -21,7 +21,7 @@ interface FeaturedProps {
   };
 }
 
-const Featured: React.FC<FeaturedProps> = ({ title, description, buttons, image }) => {
+const CategoryCommon: React.FC<CategoryCommon> = ({ title, description, buttons, image }) => {
   return (
     <div className="flex items-center justify-between mt-24 flex-wrap space-y-3">
       <div className="max-w-[510px] text-center mx-auto space-y-4">
@@ -46,7 +46,6 @@ const Featured: React.FC<FeaturedProps> = ({ title, description, buttons, image 
         <Image
           src={image.src}
           alt={image.alt}
-          layout="responsive"
           width={image.width}
           height={image.height}
           loading="lazy"
@@ -57,4 +56,4 @@ const Featured: React.FC<FeaturedProps> = ({ title, description, buttons, image 
   );
 };
 
-export default Featured;
+export default CategoryCommon;
