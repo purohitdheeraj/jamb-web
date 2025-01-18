@@ -41,14 +41,14 @@ export default function Home() {
       <ListProducts col={5} products={furnitureProducts} title={'Our latest furniture'}/>
       </div>
 
-      <div className="py-36 bg-accent">
+      <div className="xl:py-36 bg-accent">
         <Collection/>
       </div>
 
       
       <ListProducts col={5} products={latestStories} title={'See more of our latest stories'}/>
 
-      <div className="py-52">
+      <div className="xl:py-52">
         <Journal/>
       </div>
 
