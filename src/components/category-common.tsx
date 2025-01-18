@@ -10,7 +10,7 @@ interface ButtonProps {
 }
 
 interface CategoryCommon {
-  title: string;
+  title: string | ReactNode;
   description: string;
   buttons: ButtonProps[];
   image: {
@@ -25,7 +25,10 @@ const CategoryCommon: React.FC<CategoryCommon> = ({ title, description, buttons,
   return (
     <div className="flex items-center justify-between mt-24 flex-wrap space-y-3">
       <div className="max-w-[510px] text-center mx-auto space-y-4">
+      {typeof title !== 'string' ? title : (<>
         <h2 className="text-3xl copernicus-semibold">{title}</h2>
+      </>)}
+      
         <p className="text-left leading-6">{description}</p>
 
         <div className=" flex xl:flex-col gap-y-3 flex-wrap justify-center space-x-3 items-center  text-secondary-foreground">

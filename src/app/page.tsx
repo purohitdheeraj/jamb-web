@@ -2,6 +2,7 @@
 import CategoryCommon from "@/components/category-common";
 import FeaturedCategory from "@/components/featured-category";
 import Hero from "@/components/hero";
+import Collection from "@/components/collection";
 import ListProducts from "@/components/list-products";
 import Navbar from "@/components/navbar";
 import { chimneyProducts, lightProducts, furnitureProducts } from "@/lib/products";
@@ -39,6 +40,10 @@ export default function Home() {
 
       <div className="mt-32">
       <ListProducts col={5} products={furnitureProducts} title={'Our latest furniture'}/>
+      </div>
+
+      <div className="py-36 bg-accent">
+        <Collection/>
       </div>
     </>
   );
