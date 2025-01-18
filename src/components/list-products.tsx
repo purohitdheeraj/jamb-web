@@ -22,7 +22,7 @@ const ListProducts: React.FC<ListProductsProps> = ({ products, title, col }) => 
         {title}
       </h2>
 
-      <div className={`mt-8 grid grid-cols-1 sm:grid-cols-2 ${col === 5 ? 'lg:grid-cols-5 gap-8': 'lg:grid-cols-4 gap-4'} `}>
+      <div className={`mt-8 grid grid-cols-1 items-center sm:grid-cols-2 ${col === 5 ? 'lg:grid-cols-5 gap-8': 'lg:grid-cols-4 gap-4'} `}>
         {products.map((product, index) => (
           <ProductCommon
             key={index}
@@ -30,7 +30,7 @@ const ListProducts: React.FC<ListProductsProps> = ({ products, title, col }) => 
             imageAlt={product.imageAlt}
             title={product.title}
             subtitle={product.subtitle}
-
+            isAutoSize={col == 5}
           />
         ))}
       </div>

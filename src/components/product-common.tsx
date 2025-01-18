@@ -6,20 +6,29 @@ interface ProductCommonProps {
   imageAlt: string;
   title: string;
   subtitle: string;
+  isAutoSize: boolean;
 }
 
-const ProductCommon: React.FC<ProductCommonProps> = ({ imageSrc, imageAlt, title, subtitle }) => {
+const ProductCommon: React.FC<ProductCommonProps> = ({ imageSrc, imageAlt, title, subtitle, isAutoSize }) => {
   return (
-    <div className='flex flex-col xl:max-w-[330px] items-center gap-y-3'>
-      <Image
+    <div className={`flex h-full flex-col   items-center gap-y-3`}>
+     {isAutoSize ? (<>
+      <img
+        src={imageSrc}
+        alt={imageAlt}
+        loading="lazy"
+        className="w-max h-auto my-auto"
+      />
+     </>):(<> <Image
         src={imageSrc}
         alt={imageAlt}
         width={330}
         height={240}
         loading="lazy"
         className="w-full h-full"
-      />
-      <h2 className='text-secondary-foreground font-bold'>
+      /></>)}
+      
+      <h2 className='text-secondary-foreground mt-auto font-bold'>
         {title}
       </h2>
       <p className='text-sm'>{subtitle}</p>
