@@ -31,7 +31,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${copernicusRegular.variable} ${copernicusCondensed.variable} antialiased`}
+        className={`${copernicusRegular.variable} ${copernicusCondensed.variable} antialiased max-w-screen-2xl mx-auto min-h-screen`}
       >
         {children}
       </body>

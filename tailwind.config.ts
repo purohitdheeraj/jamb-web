@@ -9,6 +9,9 @@ export default {
   ],
   theme: {
   	extend: {
+			screens: {
+        '2xl': '1512px', // override 1536 default to 1512
+      },
   		colors: {
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
