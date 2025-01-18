@@ -1,6 +1,6 @@
 'use client';
 import Image from "next/image";
-import Link from "next/link";
+import { Button } from "./ui/button";
 
 
 const Hero = () => {
@@ -15,13 +15,15 @@ const Hero = () => {
   className="block w-full max-h-[768px] min-h-[320px] object-cover"
 />
 
-
       <div>
         <ul className="flex items-center gap-x-2 text-secondary-foreground flex-wrap leading-6">
-            <li><Link href="#fireplaces">Fireplaces |</Link></li>
-            <li><Link href="#lighting">Lighting |</Link></li>
-            <li><Link href="#furniture">Furniture |</Link></li>
-            <li><Link href="#journal">Journal</Link></li>
+            <li><Button variant='link'>Fireplaces</Button></li>
+            <li>|</li>
+            <li><Button variant='link' >Lighting</Button></li>
+            <li>|</li>
+            <li><Button variant='link' >Furniture</Button></li>
+            <li>|</li>
+            <li><Button variant='link' >Journal</Button></li>
         </ul>
       </div>
     </main>
