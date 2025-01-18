@@ -1,4 +1,7 @@
 'use client';
+
+import { Button } from "./ui/button";
+
 export default function Footer() {
   return (
     <footer className="bg-secondary p-8 text-sm text-secondary-foreground">
@@ -25,12 +28,13 @@ export default function Footer() {
                 placeholder="Search"
                 className="w-full rounded border border-gray-300 px-3 py-1.5"
               />
-              <button
+              <Button
                 type="submit"
-                className="rounded bg-gray-800 px-4 py-1.5 text-white hover:bg-gray-700"
+                variant={'default'}
+                className="text-secondary"
               >
                 Subscribe
-              </button>
+              </Button>
             </form>
             <label className="flex items-center gap-2">
               <input type="checkbox" className="rounded border-gray-300" />
