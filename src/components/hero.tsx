@@ -12,6 +12,7 @@ const Hero = () => {
   layout="responsive"
   width={1436}
   height={768}
+  loading="lazy"
   className="block w-full max-h-[768px] min-h-[320px] object-cover"
 />
 
