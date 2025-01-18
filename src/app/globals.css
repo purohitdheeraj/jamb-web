@@ -73,3 +73,13 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+
+.copernicus-regular{
+  font-family: var(--font-copernicus-regular);
+}
+
+.copernicus-condensed{
+  font-family: var(--font-copernicus-condensed);
+}
+

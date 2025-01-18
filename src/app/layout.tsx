@@ -1,16 +1,22 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import localFont from "next/font/local";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+
+const copernicusRegular = localFont({
+  src: "./fonts/copernicus-regular.woff2",
+  variable: "--font-copernicus-regular",
+  weight: "100 900",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const copernicusCondensed = localFont({
+  src: "./fonts/copernicus-condensed.woff2",
+  variable: "--font-copernicus-condensed",
+  weight: "100 900",
 });
+
+
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -25,7 +31,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${copernicusRegular.variable} ${copernicusCondensed.variable} antialiased`}
       >
         {children}
       </body>
