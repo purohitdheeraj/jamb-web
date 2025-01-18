@@ -28,7 +28,7 @@ const ProductCommon: React.FC<ProductCommonProps> = ({ imageSrc, imageAlt, title
         className="w-full h-full"
       /></>)}
       
-      <h2 className='text-secondary-foreground mt-auto font-bold'>
+      <h2 className='text-secondary-foreground copernicus-semibold mt-auto'>
         {title}
       </h2>
       <p className='text-sm'>{subtitle}</p>

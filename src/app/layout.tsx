@@ -15,6 +15,11 @@ const copernicusCondensed = localFont({
   weight: "100 900",
 });
 
+const copernicusBold = localFont({
+  src: "./fonts/copernicus-semibold.woff2",
+  variable: "--font-copernicus-semibold",
+  weight: "100 900",
+});
 
 
 export const metadata: Metadata = {
@@ -30,7 +35,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${copernicusRegular.variable} ${copernicusCondensed.variable} antialiased max-w-screen-2xl mx-auto min-h-screen copernicus-regular`}
+        className={`${copernicusRegular.variable} ${copernicusBold.variable} ${copernicusCondensed.variable} antialiased max-w-screen-2xl mx-auto min-h-screen copernicus-regular`}
       >
         {children}
       </body>

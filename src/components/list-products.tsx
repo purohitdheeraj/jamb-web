@@ -18,7 +18,7 @@ interface ListProductsProps {
 const ListProducts: React.FC<ListProductsProps> = ({ products, title, col }) => {
   return (
     <div className="w-full bg-secondary py-9 px-10">
-      <h2 className="text-2xl font-semibold text-center">
+      <h2 className="text-2xl text-center copernicus-semibold">
         {title}
       </h2>
 
