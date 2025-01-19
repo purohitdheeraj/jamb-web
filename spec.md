@@ -18,3 +18,9 @@ Solution
 
 - for chimney and light products we have 4 col grid and 5 col grid
 - we can use common component for both cases by passing `col` as prop
+
+## mobile responsive
+- making this layout responsive was simple grid flex-wrap did the work
+
+## animation
+- for subtle animation have used motion.dev
