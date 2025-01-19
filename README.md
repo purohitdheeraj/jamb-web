@@ -12,7 +12,11 @@ Discover a curated collection of antique fireplaces and lighting fixtures that b
 For more details on the blockers faced while building this design and their solution, please visit [spec.md](./spec.md).
 
 
+## Lighthouse report
+![image](https://github.com/user-attachments/assets/6daf0298-5598-419b-8152-231330ac0480)
 
+
+## Screenshot
 ![image](https://github.com/user-attachments/assets/f7bc369e-7540-4de6-9fe3-03bfdcb3ca79)
 
 
