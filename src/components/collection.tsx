@@ -13,7 +13,7 @@ const Collection = () => {
           </h2>
       </div>
     </>}
-    description="Lorem ipsum dolor sit amet, incididunt ut labore et dolore consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim labore et dolore magna ad minim veniam."
+    description="Explore our exclusive collection of finely crafted furniture, designed to bring elegance and comfort to your living space."
     buttons={[
       { label: 'Discover more', variant: 'outline', onClick: () => console.log('Explore clicked') },
     ]}

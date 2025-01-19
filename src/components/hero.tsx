@@ -6,6 +6,7 @@ import { Button } from "./ui/button";
 const Hero = () => {
   return (
     <main className="flex flex-col items-center space-y-7 w-full max-w-[1436px] mx-auto">
+
       <Image
   src="/assets/home-banner.png"
   alt="fireplaces"

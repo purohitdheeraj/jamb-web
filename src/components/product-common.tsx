@@ -1,5 +1,7 @@
 'use client';
 import Image from 'next/image';
+import * as motion from "motion/react-client"
+
 
 interface ProductCommonProps {
   imageSrc: string;
@@ -9,9 +11,19 @@ interface ProductCommonProps {
   isAutoSize: boolean;
 }
 
+const transition = {
+  duration: 0.4,
+  delay: 0.2,
+}
+
 const ProductCommon: React.FC<ProductCommonProps> = ({ imageSrc, imageAlt, title, subtitle, isAutoSize }) => {
   return (
-    <div className={`flex h-full flex-col   items-center gap-y-3`}>
+  
+    <motion.div  whileHover={{ scale: 0.9 }}
+    whileTap={{ scale: 0.9 }}
+    transition={transition}
+    
+     className={`flex h-full flex-col cursor-pointer   items-center gap-y-3`}>
      {isAutoSize ? (<>
       <img
         src={imageSrc}
@@ -32,7 +44,7 @@ const ProductCommon: React.FC<ProductCommonProps> = ({ imageSrc, imageAlt, title
         {title}
       </h2>
       <p className='text-sm line-clamp-1'>{subtitle}</p>
-    </div>
+    </motion.div>
   );
 };
 
