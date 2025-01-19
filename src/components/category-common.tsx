@@ -23,13 +23,13 @@ interface CategoryCommon {
 
 const CategoryCommon: React.FC<CategoryCommon> = ({ title, description, buttons, image }) => {
   return (
-    <div className="flex items-center justify-between mt-24 flex-wrap space-y-3">
+    <div className="flex items-center justify-between mt-24 flex-wrap space-y-6 gap-y-6">
       <div className="max-w-[510px] text-center mx-auto space-y-4">
       {typeof title !== 'string' ? title : (<>
         <h2 className="text-3xl copernicus-semibold text-center">{title}</h2>
       </>)}
       
-        <p className="text-left leading-6 ">{description}</p>
+        <p className="xl:text-left  leading-6 ">{description}</p>
 
         <div className=" flex xl:flex-col gap-y-3 flex-wrap justify-center space-x-3 items-center  text-secondary-foreground">
           {buttons.map((button, index) => (
@@ -45,13 +45,14 @@ const CategoryCommon: React.FC<CategoryCommon> = ({ title, description, buttons,
         </div>
       </div>
 
-      <div className={` xl:max-w-[584px] w-full ${image.height < 600 ? '': ' xl:mr-24'}`}>
+      <div className={`xl:max-w-[584px]  w-full ${image.height < 600 ? '': ' xl:mr-24'}`}>
         <Image
           src={image.src}
           alt={image.alt}
           width={image.width}
           height={image.height}
           loading="lazy"
+          className='block mx-auto'
         />
       </div>
     </div>

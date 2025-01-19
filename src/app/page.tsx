@@ -38,11 +38,11 @@ export default function Home() {
     }}
   />
 
-      <div className="mt-32">
+      <div className="xl:mt-32">
       <ListProducts col={5} products={furnitureProducts} title={'Our latest furniture'}/>
       </div>
 
-      <div className="xl:py-36 bg-accent">
+      <div className="xl:py-36 bg-accent py-2 ">
         <Collection/>
       </div>
 

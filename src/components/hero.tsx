@@ -16,7 +16,7 @@ const Hero = () => {
 />
 
       <div>
-        <ul className="flex items-center gap-x-2 text-secondary-foreground flex-wrap leading-6">
+        <ul className="flex items-center gap-x-2 text-secondary-foreground flex-wrap justify-center leading-6">
             <li><Button variant='link'>Fireplaces</Button></li>
             <li>|</li>
             <li><Button variant='link' >Lighting</Button></li>

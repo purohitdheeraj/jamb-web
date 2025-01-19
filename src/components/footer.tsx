@@ -26,7 +26,7 @@ export default function Footer() {
               <input
                 type="email"
                 placeholder="Search"
-                className="w-full rounded border border-gray-300 px-3 py-1.5"
+                className="w-full border border-gray-300 px-3 py-1.5"
               />
               <Button
                 type="submit"
@@ -37,7 +37,7 @@ export default function Footer() {
               </Button>
             </form>
             <label className="flex items-center gap-2">
-              <input type="checkbox" className="rounded border-gray-300" />
+              <input type="checkbox" className="rounded-full border-gray-300" />
               <span className="text-xs">I agree to our Privacy Policy</span>
             </label>
           </div>
