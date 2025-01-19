@@ -24,19 +24,21 @@ export default function Home() {
       <ListProducts col={4} products={chimneyProducts} title={'Our latest chimneypieces'}/>
       <ListProducts col={5} products={lightProducts} title={'Our latest lighting'}/>
       </div>
+      <div className="py-10">
       <CategoryCommon
-    title="Furniture"
-    description="Lorem ipsum dolor sit amet, incididunt ut labore et dolore consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim labore et dolore magna ad minim veniam."
-    buttons={[
+        title="Furniture"
+        description="Discover our exquisite range of furniture, crafted to perfection to enhance your living spaces. From contemporary designs to classic pieces, our collection offers something for every taste and style."
+        buttons={[
       { label: 'Explore our Furniture', variant: 'outline', onClick: () => console.log('Explore clicked') },
-    ]}
-    image={{
+        ]}
+        image={{
       src: '/assets/furniture-banner.png',
       alt: 'furniture',
       width: 584,
       height: 734,
-    }}
-  />
+        }}
+      />
+      </div>
 
       <div className="xl:mt-32">
       <ListProducts col={5} products={furnitureProducts} title={'Our latest furniture'}/>
@@ -49,7 +51,7 @@ export default function Home() {
       
       <ListProducts col={5} products={latestStories} title={'See more of our latest stories'}/>
 
-      <div className="xl:py-52">
+      <div className="xl:py-52 py-10">
         <Journal/>
       </div>
       <Footer/>

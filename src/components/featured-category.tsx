@@ -7,7 +7,7 @@ const FeaturedCategory = () => {
     <>
     <CategoryCommon
     title="Fireplaces"
-    description="Lorem ipsum dolor sit amet, incididunt ut labore et dolore consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim labore et dolore magna ad minim veniam."
+    description="Discover our exquisite collection of antique fireplaces, each piece meticulously crafted to add a touch of elegance and warmth to your home. From classic marble designs to intricate wooden mantels, our selection offers something for every taste and style."
     buttons={[
       { label: 'Explore our Fireplaces', variant: 'outline', onClick: () => console.log('Explore clicked') },
       { label: 'Sell an Antique Chimneypiece', variant: 'outline', onClick: () => console.log('Sell clicked') },
@@ -18,24 +18,24 @@ const FeaturedCategory = () => {
       width: 584,
       height: 734,
     }}
-  />
+    />
 
 
-<CategoryCommon
+  <CategoryCommon
     title="Lighting"
-    description="Lorem ipsum dolor sit amet, incididunt ut labore et dolore consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim labore et dolore magna ad minim veniam."
+    description="Illuminate your space with our curated range of antique lighting fixtures. From grand chandeliers to charming sconces, each piece is a testament to timeless design and superior craftsmanship, perfect for adding a unique glow to any room."
     buttons={[
       { label: 'Explore our Lighting', variant: 'outline', onClick: () => console.log('Explore clicked') },
     ]}
     image={{
       src: '/assets/lighting.png',
-      alt: 'fireplaces',
+      alt: 'lighting',
       width: 584,
       height: 734,
     }}
-  />
+    />
 
-  </>
+    </>
   )
 }
 
