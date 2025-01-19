@@ -40,7 +40,7 @@ const Icon = ({ name, color = "currentColor",fill=true, width = 28, height = 28 
   };
   
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" fill={fill ? color: 'none'} width={width} height={height} viewBox="0 0 34 24">
+    <svg xmlns="http://www.w3.org/2000/svg" fill={fill ? color: 'none'} width={width} height={height} viewBox="0 0 34 24" className='cursor-pointer'>
       {icons[name]}
     </svg>
   );

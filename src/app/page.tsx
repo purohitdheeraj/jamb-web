@@ -8,6 +8,7 @@ import Navbar from "@/components/navbar";
 import { chimneyProducts, lightProducts, furnitureProducts, latestStories } from "@/lib/products";
 import Journal from "@/components/journal";
 import Footer from "@/components/footer";
+import ScrollRevealSection from "@/components/scroll-reveal";
 
 
 export default function Home() {
@@ -18,12 +19,18 @@ export default function Home() {
       <Navbar/>   
       <div className="px-10">
       <Hero/>
-      <FeaturedCategory/>
+
+      <ScrollRevealSection>
+        <FeaturedCategory/>
+      </ScrollRevealSection>
+      
       </div>
       <div className="mt-32">
       <ListProducts col={4} products={chimneyProducts} title={'Our latest chimneypieces'}/>
       <ListProducts col={5} products={lightProducts} title={'Our latest lighting'}/>
       </div>
+
+      <ScrollRevealSection>
       <div className="py-10">
       <CategoryCommon
         title="Furniture"
@@ -39,6 +46,7 @@ export default function Home() {
         }}
       />
       </div>
+      </ScrollRevealSection>
 
       <div className="xl:mt-32">
       <ListProducts col={5} products={furnitureProducts} title={'Our latest furniture'}/>
@@ -51,9 +59,11 @@ export default function Home() {
       
       <ListProducts col={5} products={latestStories} title={'See more of our latest stories'}/>
 
+        <ScrollRevealSection>
       <div className="xl:py-52 py-10">
-        <Journal/>
+          <Journal/>
       </div>
+        </ScrollRevealSection>
       <Footer/>
     </>
   );
