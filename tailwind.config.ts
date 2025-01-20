@@ -12,6 +12,9 @@ export default {
 			screens: {
         '2xl': '1512px', // override 1536 default to 1512
       },
+			container:{
+				center: true
+			},
   		colors: {
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',

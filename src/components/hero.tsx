@@ -5,7 +5,7 @@ import { Button } from "./ui/button";
 
 const Hero = () => {
   return (
-    <main className="flex flex-col items-center space-y-7 w-full max-w-[1436px] mx-auto">
+    <main className="flex flex-col items-center space-y-7  container">
 
       <Image
   src="/assets/home-banner.png"
@@ -13,7 +13,7 @@ const Hero = () => {
   width={1436}
   height={768}
   loading="lazy"
-  className="block w-full max-h-[768px] min-h-[320px] object-cover"
+  className="block  max-h-[768px] min-h-[320px] object-cover"
 />
 
       <div>
